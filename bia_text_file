@@ -1,0 +1,104 @@
+---
+title: "Remote Sensing for monitoring urban expansion: The Case of Manaus (Brazil)"
+author:  "Plafitas"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: "dnmye_theme.css"
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+class:inverse, middle
+
+background-image: url("img/MANAUS_IMG.png")
+background-position: center
+background-size: cover
+
+# Remote Sensing for monitoring 
+# urban expansion
+
+## The Case of Manaus (Brazil)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+```{r setup, include=FALSE}
+# First, We set some basic stuff for our presentation.
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width= 9, fig.height = 3.5, fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+```
+
+```{r, echo=FALSE}
+# We are going to add some extras.
+# We upload package xaringanExtra.
+library(xaringanExtra)
+
+# We add a progress bar.
+use_progress_bar(color = "#252C4F")
+
+# We add a pencil.
+use_scribble()
+
+# We add the slide searcher.
+use_tile_view()
+
+```
+
+```{r, include=FALSE, warning=FALSE, eval=TRUE}
+
+# Finally, we are going to use the template provided by the Directorate of Markets and Statistics of the Undersecretary of Tourism of Argentina. 
+
+# If you want to lean more, you can visit https://github.com/dnme-minturdep/comunicacion
+
+library(xaringanthemer)
+library(comunicacion)
+style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
+                 # FONTS
+                 header_font_google = google_font('Encode Sans'),
+                 text_font_google   = google_font('Roboto'),
+                 code_font_google   = google_font('IBM Plex Mono'),
+                 # COLORES 
+                 base_color = "#252C4F",
+                 code_inline_color = dnmye_colores("rosa"), 
+                 inverse_link_color = "#3B4449",
+                 background_color = "#FFFFFF",
+                 title_slide_background_position = "95% 5%", 
+                 title_slide_background_size = "200px",
+                 footnote_color = "#3B4449",
+                 link_color = "3B4449",
+                 text_slide_number_font_size = "16px")
+```
+
+
+---
+
+class:inverse, middle
+
+background-image: url("img/BRAZIL_IMG.png")
+background-position: center
+background-size: cover
+
+---
